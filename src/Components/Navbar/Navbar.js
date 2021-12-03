@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Box, Option, Ancor } from "./Style";
 
 const Navbar = () => {
@@ -6,13 +7,17 @@ const Navbar = () => {
       <Container>
         <Box>
           <Option>
-            <Ancor href="#Header">Inicio</Ancor>
+            <Link to="/">
+              <Ancor href="#Header">Inicio</Ancor>
+            </Link>
           </Option>
           <Option>
-            <Ancor href="List">To-Do</Ancor>
+            <Link to="/">
+              <Ancor href="List">To-Do</Ancor>
+            </Link>
           </Option>
           <Option>
-            <Ancor href="Autora">Autora</Ancor>
+            <Link to="/sobre">Autora</Link>
           </Option>
           <Option>
             <Ancor href="https://github.com/daniszcode">Contato</Ancor>
